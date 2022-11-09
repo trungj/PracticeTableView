@@ -16,6 +16,9 @@
 		84499465291B474C00CC3B7D /* ZaloChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84499463291B474C00CC3B7D /* ZaloChatCell.swift */; };
 		84499466291B474C00CC3B7D /* ZaloChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84499464291B474C00CC3B7D /* ZaloChatCell.xib */; };
 		84499468291B50F200CC3B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84499467291B50F200CC3B7D /* User.swift */; };
+		8449946B291B911900CC3B7D /* ZaloContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84499469291B911900CC3B7D /* ZaloContact.swift */; };
+		8449946C291B911900CC3B7D /* ZaloContact.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8449946A291B911900CC3B7D /* ZaloContact.xib */; };
+		8449946E291B928A00CC3B7D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449946D291B928A00CC3B7D /* ContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		84499463291B474C00CC3B7D /* ZaloChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloChatCell.swift; sourceTree = "<group>"; };
 		84499464291B474C00CC3B7D /* ZaloChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZaloChatCell.xib; sourceTree = "<group>"; };
 		84499467291B50F200CC3B7D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84499469291B911900CC3B7D /* ZaloContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloContact.swift; sourceTree = "<group>"; };
+		8449946A291B911900CC3B7D /* ZaloContact.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZaloContact.xib; sourceTree = "<group>"; };
+		8449946D291B928A00CC3B7D /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				8449944F291B46DD00CC3B7D /* SceneDelegate.swift */,
 				84499467291B50F200CC3B7D /* User.swift */,
 				84499463291B474C00CC3B7D /* ZaloChatCell.swift */,
+				84499469291B911900CC3B7D /* ZaloContact.swift */,
+				8449946A291B911900CC3B7D /* ZaloContact.xib */,
+				8449946D291B928A00CC3B7D /* ContactViewController.swift */,
 				84499464291B474C00CC3B7D /* ZaloChatCell.xib */,
 				84499451291B46DD00CC3B7D /* ViewController.swift */,
 				84499453291B46DD00CC3B7D /* Main.storyboard */,
@@ -137,6 +146,7 @@
 				8449945A291B46E000CC3B7D /* LaunchScreen.storyboard in Resources */,
 				84499457291B46E000CC3B7D /* Assets.xcassets in Resources */,
 				84499455291B46DD00CC3B7D /* Main.storyboard in Resources */,
+				8449946C291B911900CC3B7D /* ZaloContact.xib in Resources */,
 				84499466291B474C00CC3B7D /* ZaloChatCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8449946B291B911900CC3B7D /* ZaloContact.swift in Sources */,
+				8449946E291B928A00CC3B7D /* ContactViewController.swift in Sources */,
 				84499452291B46DD00CC3B7D /* ViewController.swift in Sources */,
 				8449944E291B46DD00CC3B7D /* AppDelegate.swift in Sources */,
 				84499450291B46DD00CC3B7D /* SceneDelegate.swift in Sources */,

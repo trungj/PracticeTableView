@@ -37,7 +37,7 @@ extension ViewController : UITableViewDataSource {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "ZaloChatCell", for: indexPath) as! ZaloChatCell
         let user = data[indexPath.row]
-        cell.avaImage.image = UIImage(systemName: "person.circle")
+        cell.avaImage.image = UIImage(named: "\(user.ava)")
         cell.nameLbl.text = user.name
         cell.mesLbl.text = user.mes
         cell.phoneImg.image = UIImage(systemName: "phone.fill")
