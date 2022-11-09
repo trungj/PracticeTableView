@@ -38,6 +38,36 @@
             </objects>
             <point key="canvasLocation" x="121" y="-34"/>
         </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="lWj-s5-p2s">
+            <objects>
+                <viewController id="Xhp-z3-raa" customClass="ContactViewController" customModule="baitapTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3o0-DL-vGV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-tB-XmV">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="J4w-YM-toI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J4w-YM-toI" firstAttribute="bottom" secondItem="jRo-tB-XmV" secondAttribute="bottom" id="GOX-Vg-Y5w"/>
+                            <constraint firstItem="jRo-tB-XmV" firstAttribute="leading" secondItem="J4w-YM-toI" secondAttribute="leading" id="bdt-2g-sTP"/>
+                            <constraint firstItem="jRo-tB-XmV" firstAttribute="top" secondItem="J4w-YM-toI" secondAttribute="top" id="s7A-MD-4o6"/>
+                            <constraint firstItem="J4w-YM-toI" firstAttribute="trailing" secondItem="jRo-tB-XmV" secondAttribute="trailing" id="wcs-eu-SlD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="jRo-tB-XmV" id="zaI-Kx-klx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scN-qv-xGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-35"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

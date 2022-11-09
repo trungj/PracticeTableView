@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContactViewController.swift
 //  baitapTableView
 //
 //  Created by trung on 09/11/2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ContactViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var data: [User] = []
@@ -17,38 +17,38 @@ class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         data = fakedata()
-        tableView.register(UINib(nibName: "ZaloChatCell", bundle: nil), forCellReuseIdentifier: "ZaloChatCell")
+        tableView.register(UINib(nibName: "ZaloContact", bundle: nil), forCellReuseIdentifier: "ZaloContact")
         
     }
 
 
 }
 
-extension ViewController : UITableViewDelegate {
+extension ContactViewController : UITableViewDelegate {
     
 }
 
-extension ViewController : UITableViewDataSource {
+extension ContactViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ZaloChatCell", for: indexPath) as! ZaloChatCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ZaloContact", for: indexPath) as! ZaloContact
         let user = data[indexPath.row]
-        cell.avaImage.image = UIImage(named: "\(user.ava)")
+        cell.avaImg.image = UIImage(named: "\(user.ava)")
         cell.nameLbl.text = user.name
-        cell.mesLbl.text = user.mes
+       
         cell.phoneImg.image = UIImage(systemName: "phone.fill")
-        
+        cell.CamImg.image = UIImage(systemName: "video.fill")
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
+   
     
     
 }
-
